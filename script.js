@@ -4,6 +4,8 @@ result.classList.add('result');
 const score = document.createElement('p')
 score.classList.add('score')
 
+const container = document.getElementById("buttoncontainer");
+
 function computerPlay() {
   let compChoice = ["rock", "paper", "scissors"];
   var randComp = compChoice[Math.floor(Math.random() * compChoice.length)];
@@ -79,5 +81,5 @@ buttons.forEach(button => {
   button.addEventListener("click", playRound);
 });
 
-buttoncontainer.append(result);
-buttoncontainer.append(score);
+container.append(result);
+container.append(score);
