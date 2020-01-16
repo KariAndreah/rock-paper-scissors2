@@ -81,5 +81,5 @@ buttons.forEach(button => {
   button.addEventListener("click", playRound);
 });
 
-container.append(result);
-container.append(score);
+container.appendChild(result);
+container.appendChild(score);
